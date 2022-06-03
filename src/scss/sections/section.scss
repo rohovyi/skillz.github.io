@@ -1,0 +1,201 @@
+.__header {
+    background-color: $color-violet-dark;
+
+    &-top {
+        display          : -webkit-box;
+        display          : -ms-flexbox;
+        display          : flex;
+        -webkit-box-pack : center;
+        -ms-flex-pack    : center;
+        justify-content  : center;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+        background-color : $color-brand;
+        font-family      : $ff__main;
+        font-size        : 18px;
+        line-height      : 27px;
+        letter-spacing   : 0em;
+        text-align       : center;
+        color            : $color-violet-dark;
+        min-height       : 43px;
+
+        span:nth-child(2){
+            margin: 0 0.25rem;
+        }
+    }
+
+    .__sign {
+        color: $color-text-gray;
+    }
+}
+
+.featured_course {
+    background-color: $color-violet;
+    color           : $color-text-white;
+    text-align      : center;
+
+    .__box {
+        &:first-child {
+            text-align: left;
+        }
+    }
+
+    .__blobs {
+        &-container {
+            .svg-wave-dims {
+                left : -9.45%;
+                right: 51.3%;
+                top  : -32px;
+            }
+
+            .svg-phone_pink-dims {
+                z-index: 5;
+            }
+        }
+
+        &-100x100 {
+            left   : 45.6%;
+            right  : 38.11%;
+            top    : -40px;
+            z-index: 10;
+        }
+
+        &-150x150 {
+            left   : 68.08%;
+            right  : 7.49%;
+            top    : -34px;
+            z-index: 10;
+        }
+
+        &-375x375 {
+            right  : -9.45%;
+            top    : 217px;
+            z-index: 10;
+        }
+    }
+}
+
+.contact,
+.teaching {
+
+    background-color: $color-violet-dark;
+    color           : $color-text-white;
+    text-align      : left;
+
+    .__box {
+        grid-gap         : 2rem;
+        -webkit-box-align: center;
+        -ms-flex-align   : center;
+        align-items      : center;
+    }
+
+    h2 {
+        text-align: left;
+
+        hr {
+            margin-left: 0;
+        }
+    }
+}
+
+.teaching {
+
+    .__blobs {
+        &-container {
+            .svg-wave-dims {
+                left   : 12.21%;
+                right  : 29.64%;
+                top    : 319.34px;
+                z-index: 1;
+            }
+
+            .svg-girl_glasses-dims {
+                left   : 0%;
+                top    : 0.34px;
+                z-index: 2;
+            }
+        }
+
+        &-100x100 {
+            left   : 10.91%;
+            right  : 72.8%;
+            top    : -34.66px;
+            z-index: 4;
+        }
+
+        &-120x120 {
+            left   : -2.61%;
+            right  : 83.06%;
+            top    : 9.34px;
+            z-index: 3;
+        }
+
+        &-375x375 {
+            right: 0;
+            top  : 215.34px;
+        }
+    }
+}
+
+.articles {
+    padding: 5rem 0 15rem;
+}
+
+.define {
+    position        : relative;
+    background-color: $color-violet-dark;
+    height          : 347px;
+
+    .container {
+        position             : absolute;
+        background-color     : $color-brand;
+        display              : -webkit-box;
+        display              : -ms-flexbox;
+        display              : flex;
+        -webkit-box-orient   : vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction   : column;
+        flex-direction       : column;
+        -webkit-box-align    : center;
+        -ms-flex-align       : center;
+        align-items          : center;
+        -webkit-box-pack     : center;
+        -ms-flex-pack        : center;
+        justify-content      : center;
+        height               : 347px;
+        top                  : calc(-347px / 2);
+        left                 : 0;
+        right                : 0;
+    }
+}
+
+.swpr {
+    background-color: $color-brand;
+    padding         : 3rem 0;
+
+    &-text {
+        font-size  : 28px;
+        font-style : italic;
+        line-height: 42px;
+    }
+
+    .swiper {
+        padding: 2rem;
+
+        &-pagination {
+            height: 1rem;
+
+            &-bullet {
+                border          : 1px #222222 solid;
+                background-color: transparent;
+                width           : 18px;
+                height          : 18px;
+
+                &-active {
+                    background-color: #222222;
+                }
+            }
+        }
+    }
+}

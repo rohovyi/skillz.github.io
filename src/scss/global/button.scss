@@ -1,0 +1,58 @@
+.__btn {
+    border-radius     : 4px;
+    font-family       : $ff__main;
+    font-size         : 18px;
+    font-weight       : 400;
+    line-height       : 27px;
+    letter-spacing    : 1px;
+    text-align        : center;
+    text-transform    : uppercase;
+    white-space       : pre;
+    cursor            : pointer;
+    -webkit-transition: background-color .5s ease 0s;
+    -o-transition     : background-color .5s ease 0s;
+    transition        : background-color .5s ease 0s;
+    padding           : 16px 24px;
+
+    &:hover,
+    &:focus {
+        background-color: darken($color-brand, $amount: 25);
+    }
+
+    &-brand {
+        background-color: $color-brand;
+        color           : $color-violet-dark;
+
+        &:hover,
+        &:focus {
+            color: $color-text-white;
+        }
+    }
+
+    &-transparent {
+        background-color  : transparent;
+        color             : $color-brand;
+        padding           : 0;
+        -webkit-transition: color .5s ease 0s;
+        -o-transition     : color .5s ease 0s;
+        transition        : color .5s ease 0s;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color           : $color-violet-dark;
+        }
+    }
+
+    &-form {
+        background-color: $color-violet-dark;
+        color           : $color-brand;
+        margin-left     : 1rem;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color           : $color-violet-dark;
+        }
+    }
+}

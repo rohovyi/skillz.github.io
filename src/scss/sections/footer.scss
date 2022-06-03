@@ -1,0 +1,97 @@
+.__footer {
+    background-color: $color-violet-dark;
+    color           : $color-text-white;
+    text-align      : left;
+
+    &-logo {
+        padding-bottom: 2rem;
+    }
+
+    &-links {
+        display              : -ms-grid;
+        display              : grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, auto));
+        font-size            : 18px;
+        line-height          : 27px;
+        letter-spacing       : 0em;
+        text-align           : left;
+
+        .__tab {
+            &-item {
+                padding-bottom: 0.5rem;
+            }
+        }
+    }
+
+    &-bottom {
+        color           : $color-text-gray;
+        background-color: $color-violet-light;
+
+        .container {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+
+            p {
+                margin-right: 2rem;
+            }
+        }
+    }
+}
+
+.__skillz {
+    -ms-grid-column-span: 2;
+    grid-column         : span 2;
+
+    ol {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+
+        li {
+            cursor            : pointer;
+            background-color  : $color-text-white;
+            border-radius     : 50%;
+            width             : 48px;
+            height            : 48px;
+            margin-right      : 1rem;
+            -webkit-transition: background-color .5s ease 0s;
+            -o-transition     : background-color .5s ease 0s;
+            transition        : background-color .5s ease 0s;
+
+            &:focus,
+            &:hover {
+                background-color: $color-brand;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                display          : -webkit-box;
+                display          : -ms-flexbox;
+                display          : flex;
+                -webkit-box-pack : center;
+                -ms-flex-pack    : center;
+                justify-content  : center;
+                -webkit-box-align: center;
+                -ms-flex-align   : center;
+                align-items      : center;
+                height           : 100%;
+
+                .fa-brands {
+                    color             : $color-violet-dark;
+                    -webkit-transition: color .5s ease 0s;
+                    -o-transition     : color .5s ease 0s;
+                    transition        : color .5s ease 0s;
+
+                    &:focus,
+                    &:hover {
+                        color: $color-text-white;
+                    }
+                }
+            }
+        }
+    }
+}

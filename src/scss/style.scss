@@ -1,0 +1,25 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+@import 'fonts';
+
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+@import '../../node_modules/swiper/swiper-bundle.min';
+
+@import 'global/vars';
+
+@import 'global/normalize';
+
+@import 'global/base';
+@import 'global/icons';
+@import 'global/button';
+
+@import 'sections/navbar';
+@import 'sections/section';
+@import 'sections/footer';
+@import 'sections/form';
+
+@import 'global/media_queries';

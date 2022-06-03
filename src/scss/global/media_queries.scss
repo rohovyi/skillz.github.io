@@ -1,0 +1,131 @@
+@media screen and (max-width: 1440px) {
+    .__blobs {
+        &-container {
+            height: 48.60088365243004vw;
+        }
+
+        &-100x100 {
+            width : 7.331378299120234vw;
+            height: 7.331378299120234vw;
+        }
+
+        &-120x120 {
+            width : 11.661807580174926vw;
+            height: 11.661807580174926vw;
+        }
+
+        &-150x150 {
+            width : 10.997067448680351vw;
+            height: 10.997067448680351vw;
+        }
+
+        &-375x375 {
+            width : 27.49266862170088vw;
+            height: 27.49266862170088vw;
+        }
+    }
+
+    .featured_course {
+        .__blobs {
+            &-375x375 {
+                top  : 21.08843537414966vw !important;
+                right: 0 !important;
+            }
+        }
+    }
+
+    .teaching {
+        .__blobs {
+            &-container {
+                .svg-wave-dims {
+                    top: 31.034013605442173vw !important;
+                }
+            }
+
+            &-375x375 {
+                right: 0;
+                top  : 20.927113702623906vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1276px) {
+
+    header>.container,
+    header>.__header-top,
+    section>.container,
+    footer>.container,
+    footer>.__footer-bottom {
+        padding-right: 0.5rem;
+        padding-left : 0.5rem;
+    }
+}
+
+@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 768px) {
+    .__col-m {
+        -ms-grid-columns     : 1fr;
+        grid-template-columns: 1fr;
+        grid-gap             : 2rem;
+    }
+
+    .__blobs {
+
+        &-container {
+            height: 48.60088365243004vw * 1.5;
+            margin: 5rem 0;
+        }
+
+        &-100x100 {
+            width : 7.331378299120234vw * 2;
+            height: 7.331378299120234vw * 2;
+        }
+
+        &-120x120 {
+            width : 11.661807580174926vw * 2;
+            height: 11.661807580174926vw * 2;
+        }
+
+        &-150x150 {
+            width : 10.997067448680351vw * 2;
+            height: 10.997067448680351vw * 2;
+        }
+
+        &-375x375 {
+            width : 27.49266862170088vw * 2;
+            height: 27.49266862170088vw * 2;
+        }
+    }
+
+    .__card {
+        &-img {
+            -ms-grid-rows     : 1fr 0.5fr 0.25fr;
+            grid-template-rows: 1fr 0.5fr 0.25fr;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .__header {
+
+        &-top {
+            -ms-flex-wrap: wrap;
+            flex-wrap    : wrap;
+        }
+    }
+}
+
+// media queries to IE5-8 
+@media \0screen\,screen\9 {}
+
+// media queries to IE9 
+@media screen and (min-width:0\0) and (min-resolution: .001dpcm) {}
+
+// media queries to IE10+ 
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {}
+
+// Firefox (any version)
+@-moz-document url-prefix() {}

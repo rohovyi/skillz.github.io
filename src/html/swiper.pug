@@ -1,0 +1,196 @@
+//*- Структура 
+//- Главный контейнер слайдера
+//- .swiper-container(dir='rtl')
+    //-  Обязательная оболочка
+    .swiper-wrapper
+        //- Слайды 
+        .swiper-slide
+            //- Контент внутри слайда
+            h1 Content
+            p Text, images, Movies, Video 
+
+        .swiper-slide
+            //- Контент внутри слайда
+            h1 Content
+            p Text, images, Movies, Video 
+
+        .swiper-slide
+            //- Контент внутри слайда
+            h1 Content
+            p Text, images, Movies, Video 
+
+    //- Стрелки управления
+    .swiper-button-prev
+    .swiper-button-next 
+    //- Пагинация
+    .swiper-pagination
+    //- Полоса прокрутки ( scrollbar )
+    .swiper-scrollbar
+
+//*- Основной контейнер 
+.swiper.swiper_DARKNESS
+
+    //*- Слайдер DARKNESS 
+    .swiper-container.swiper_DARKNESS-container
+        .swiper-wrapper.swiper_DARKNESS-wrapper
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-1')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/header.jpg" alt="HEADER")
+                    img.swiper-lazy(data-src="@img/room.jpg" src="@img/1x1.png" alt="ROOM")
+                    .swiper-lazy-preloader
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-2')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/kitchen.jpg" alt="KITCHEN")
+                    img.swiper-lazy(data-src="@img/kitchen.jpg" src="@img/1x1.png" alt="KITCHEN")
+                    .swiper-lazy-preloader
+                //- .swiper-container.swiper-in
+                    .swiper-wrapper.swiper-in-wrapper
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/header.jpg" src="@img/1x1.png" alt="HEADER")
+                                .swiper-lazy-preloader
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/kitchen.jpg" src="@img/1x1.png" alt="KITCHEN")
+                                .swiper-lazy-preloader
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/room.jpg" src="@img/1x1.png" alt="ROOM")
+                                .swiper-lazy-preloader
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/header.jpg" src="@img/1x1.png" alt="HEADER")
+                                .swiper-lazy-preloader
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/room.jpg" src="@img/1x1.png" alt="ROOM")
+                                .swiper-lazy-preloader
+                        .swiper-slide.swiper-in-slide
+                            .swiper-in-image
+                                img.swiper-lazy(data-src="@img/kitchen.jpg" src="@img/1x1.png" alt="KITCHEN")
+                                .swiper-lazy-preloader
+                    .swiper-pagination
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-3')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/room.jpg" alt="ROOM")
+                    img.swiper-lazy(data-src="@img/room.jpg" src="@img/1x1.png" alt="ROOM")
+                    .swiper-lazy-preloader
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-6')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/header.jpg" alt="HEADER")
+                    img.swiper-lazy(data-src="@img/kitchen.jpg" src="@img/1x1.png" alt="KITCHEN")
+                    .swiper-lazy-preloader
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-4')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/room.jpg" alt="ROOM")
+                    img.swiper-lazy(data-src="@img/room.jpg" src="@img/1x1.png" alt="ROOM")
+                    .swiper-lazy-preloader
+            .swiper-slide.swiper_DARKNESS-slide(data-hash='slide-5')
+                .swiper_DARKNESS-image.swiper-zoom-container
+                    //- img(src="@img/kitchen.jpg" alt="KITCHEN")
+                    img.swiper-lazy(data-src="@img/kitchen.jpg" src="@img/1x1.png" alt="KITCHEN")
+                    .swiper-lazy-preloader
+        //- .swiper-button-prev
+        //- .swiper-button-next
+        //- .swiper-pagination
+        //- .swiper-scrollbar
+        //- Фракция 
+        //- .swiper-fraction 
+            .swiper-current 1
+            .swiper-sepparator /
+            .swiper-total 1
+
+    //*- Слайдер 
+    //- .swiper-container.swiper-text
+        .swiper-wrapper.swiper-text-wrapper
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star','Star']
+                    include star
+                p We had an amazing stay at the Guest House!
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                p: b Nate Davidsson
+
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star','Star']
+                    include star
+                p Beautiful little hideaway.
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                p: b Laura Paulie
+
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star','Star-Outline']
+                    include star
+                p Best vacation ever!
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                p: b Greg Todd
+
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star','Star-Outline']
+                    include star
+                p We had an amazing stay at the Guest House!
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+                p: b Nate Davidsson
+
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star-Outline','Star-Outline']
+                    include star
+                p Beautiful little hideaway.
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
+                p: b Laura Paulie
+
+            .swiper-slide.swiper-text-slide
+                .__list
+                    -var classItem = ['Star','Star','Star','Star','Star']
+                    include star
+                p Best vacation ever!
+                span Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+                p: b Greg Todd
+        .swiper-button-prev
+        .swiper-button-next
+
+    //*- Слайдер мини 
+    .swiper-container.swiper-mini
+        .swiper-wrapper.swiper-mini-wrapper
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/room.jpg" alt="ROOM")
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/kitchen.jpg" alt="KITCHEN")
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/room.jpg" alt="ROOM")
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/kitchen.jpg" alt="KITCHEN")
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/room.jpg" alt="ROOM")
+            .swiper-slide.swiper-mini-slide
+                .swiper-mini-image
+                    img(src="@img/kitchen.jpg" alt="KITCHEN")
+
+    //- Слайдер паралакс 
+    //- .swiper-container.swiper-parallax
+        .swiper-parallax-bg(data-swiper-parallax="-20%")
+        .swiper-wrapper.swiper-parallax-wrapper
+            .swiper-slide.swiper-parallax-slide
+                h2.swiper-parallax-title(data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2") Слайд №1
+                .swiper-parallax-text(data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-parallax-duration="500") Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque, autem eveniet sapiente esse sint vitae quasi culpa cum aspernatur! Repellendus fugiat eos iste minus perspiciatis laudantium numquam laborum quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt fuga esse nobis, voluptatibus temporibus sunt cum totam odit accusantium architecto. Nemo perferendis nobis reprehenderit exercitationem quo vitae ea laborum quos!
+                a.swiper-parallax-button(href="#" data-swiper-parallax-opacity="0" data-swiper-parallax="-300") Я кнопка
+            .swiper-slide.swiper-parallax-slide
+                h2.swiper-parallax-title(data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2") Слайд №2
+                .swiper-parallax-text(data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-parallax-duration="500") Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque, autem eveniet sapiente esse sint vitae quasi culpa cum aspernatur! Repellendus fugiat eos iste minus perspiciatis laudantium numquam laborum quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt fuga esse nobis, voluptatibus temporibus sunt cum totam odit accusantium architecto. Nemo perferendis nobis reprehenderit exercitationem quo vitae ea laborum quos!
+                a.swiper-parallax-button(href="#" data-swiper-parallax-opacity="0" data-swiper-parallax="-300") Я кнопка
+            .swiper-slide.swiper-parallax-slide
+                h2.swiper-parallax-title(data-swiper-parallax-opacity="0" data-swiper-parallax-scale="0.2") Слайд №3
+                .swiper-parallax-text(data-swiper-parallax-opacity="0" data-swiper-parallax="-300" data-swiper-parallax-duration="500") Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cumque, autem eveniet sapiente esse sint vitae quasi culpa cum aspernatur! Repellendus fugiat eos iste minus perspiciatis laudantium numquam laborum quam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt fuga esse nobis, voluptatibus temporibus sunt cum totam odit accusantium architecto. Nemo perferendis nobis reprehenderit exercitationem quo vitae ea laborum quos!
+                a.swiper-parallax-button(href="#" data-swiper-parallax-opacity="0" data-swiper-parallax="-300") Я кнопка
+        .swiper-button-prev
+        .swiper-button-next
+        .swiper-pagination

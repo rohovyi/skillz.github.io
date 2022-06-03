@@ -1,0 +1,28 @@
+footer.__footer
+    .container 
+        .__footer-logo: img.svg-icon_logo(src="@img/icons/icon_logo.svg" alt="logo")
+        .__footer-links 
+            ul.__tab.__platform
+                li.__tab-item.__sub learning Platform
+                - var items = ['Home', 'Courses', 'Free Workshops', 'Blog','About','Contact']
+                - var pages = ['#', '#', '#', '#', '#', '#']
+                    each item, key in items 
+                        li.__tab-item: a(href=pages[key])= item
+            ul.__tab.__template
+                li.__tab-item.__sub Template
+                - var items = ['Instructions', 'Style Guide', 'Licenses', 'Changelog']
+                - var pages = ['#', '#', '#', '#']
+                    each item, key in items 
+                        li.__tab-item: a(href=pages[key])= item
+            ul.__tab.__skillz
+                li.__tab-item.__sub Follow skillz
+                li.__tab-item: ol
+                    li: a(href='#'): i.fa-brands.fa-tiktok
+                    li: a(href='#'): i.fa-brands.fa-instagram
+                    li: a(href='#'): i.fa-brands.fa-youtube
+                    li: a(href='#'): i.fa-brands.fa-facebook-f
+                    li: a(href='#'): i.fa-brands.fa-twitter
+    .__footer-bottom 
+        .container 
+            p © Skillz Template
+            p Powered by Webflow

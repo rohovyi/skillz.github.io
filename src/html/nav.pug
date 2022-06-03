@@ -1,0 +1,16 @@
+nav.__nav
+    .__nav-logo 
+        .__nav-logo-img: img.svg-icon_logo(src="@img/icons/icon_logo.svg" alt="logo")
+    .__nav-links
+        - var items = ['Shop','About us','Our team','Buyer\'s guides','Categories']
+        - var dataItems=['shop','about','team','byer','categories']
+            each item, key in items 
+                if item === 'Shop'
+                    a.__nav-item.__nav-item-active(href='#' data-link=dataItems[key])= item
+                else
+                    a.__nav-item(href='#' data-link=dataItems[key])= item
+        .__nav-shop.__nav-item: i.fa-solid.fa-cart-shopping
+    .__nav-collapse
+        .__nav-menu_button
+            .__nav-menu_lines
+    .__nav_overlay
